@@ -1,0 +1,50 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Stack;
+class Solution {
+    public ListNode removeNodes(ListNode head) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        Stack<Integer> st = new Stack<Integer>();
+        ListNode temp = head;
+        while(temp!=null){
+            if(st.isEmpty()){
+                st.push(temp.val);
+            }
+            else{
+                int num = st.peek();
+                if(temp.val<num){
+                    st.push(temp.val);
+                }
+                else{
+                    while(!st.isEmpty() && st.peek()<temp.val){
+                        st.pop();
+                    }
+                    st.push(temp.val);
+                } 
+            }
+            temp = temp.next;
+        }
+        while(!st.isEmpty()){
+            list.add(st.pop());
+        }
+        Collections.reverse(list);
+         ListNode dummy = new ListNode(-1);
+         ListNode curr = dummy;
+         for(int i =0;i<list.size();i++){
+            ListNode temp1 = new ListNode(list.get(i));
+            curr.next = temp1;
+            curr = curr.next;
+         }
+         return dummy.next;
+    }
+}

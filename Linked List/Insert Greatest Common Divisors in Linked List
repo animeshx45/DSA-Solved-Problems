@@ -1,0 +1,33 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public static int hcf(int a,int b){
+        int ans = -1;
+        int min = Math.min(a,b);
+        for(int i = 1; i<=min;i++){
+            if(a%i==0 && b%i==0){
+                ans = i;
+            }
+        }
+        return ans;
+    }
+    public ListNode insertGreatestCommonDivisors(ListNode head) {
+        ListNode temp = head;
+        while(temp.next!=null){
+            int add = hcf(temp.val,temp.next.val);
+            ListNode temp1 = new ListNode(add);
+            temp1.next = temp.next;
+            temp.next = temp1;
+            temp = temp.next.next;
+        }
+        return head;
+    }
+}

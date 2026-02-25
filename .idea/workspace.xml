@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="267b4676-9ef9-4d0b-a2ae-8bac64977089" name="Changes" comment="Find First Palindromic String in the Array" />
+    <list default="true" id="267b4676-9ef9-4d0b-a2ae-8bac64977089" name="Changes" comment="Minimum String Length After Removing Substrings">
+      <change afterPath="$PROJECT_DIR$/Strings/Remove Trailing Zeros From a String" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +181,31 @@
       <option name="project" value="LOCAL" />
       <updated>1772032193948</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Check if All A's Appears Before All B's">
+      <option name="closed" value="true" />
+      <created>1772032276540</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1772032276540</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Percentage of Letter in String">
+      <option name="closed" value="true" />
+      <created>1772032375303</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1772032375303</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Minimum String Length After Removing Substrings">
+      <option name="closed" value="true" />
+      <created>1772032421917</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1772032421917</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -195,7 +221,10 @@
     <MESSAGE value="Check if the Sentence Is Pangram" />
     <MESSAGE value="Reverse Prefix of Word" />
     <MESSAGE value="Find First Palindromic String in the Array" />
-    <option name="LAST_COMMIT_MESSAGE" value="Find First Palindromic String in the Array" />
+    <MESSAGE value="Check if All A's Appears Before All B's" />
+    <MESSAGE value="Percentage of Letter in String" />
+    <MESSAGE value="Minimum String Length After Removing Substrings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minimum String Length After Removing Substrings" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

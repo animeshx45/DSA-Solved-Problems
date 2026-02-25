@@ -1,0 +1,15 @@
+class Solution {
+    public String removeTrailingZeros(String num) {
+        StringBuilder sb = new StringBuilder(num);
+        int n = sb.length();
+        for(int i =n-1;i>=0;i--){
+            if(sb.charAt(i)=='0'){
+                sb.deleteCharAt(i);
+            }
+            else break;
+        }
+        String str = sb.toString();
+        return str;
+
+    }
+}

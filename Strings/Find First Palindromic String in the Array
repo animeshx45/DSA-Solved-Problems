@@ -1,0 +1,23 @@
+class Solution {
+    public String firstPalindrome(String[] words) {
+        int  n = words.length;
+        String ans = "";
+        for(int i =0;i<n;i++){
+            String str = words[i];
+            int j = 0;int k =str.length()-1;
+            boolean flag = true;
+            while(j<=k){
+                if(str.charAt(j)!=str.charAt(k)){
+                    flag = false;
+                }
+                j++;
+                k--;
+            }
+            if(flag == true){
+                return str;
+            }
+        }
+        return ans;
+
+    }
+}

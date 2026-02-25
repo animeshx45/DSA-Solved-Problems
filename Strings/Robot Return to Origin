@@ -1,0 +1,26 @@
+class Solution {
+    public boolean judgeCircle(String moves) {
+        int n = moves.length();
+        int Lfreq = 0;
+        int Rfreq = 0;
+        int Ufreq = 0;
+        int Dfreq = 0;
+        for(int i =0;i<n;i++){
+            if(moves.charAt(i)=='L'){
+                Lfreq++;
+            }
+            else if(moves.charAt(i)=='R'){
+                Rfreq++;
+            }
+            else if(moves.charAt(i)=='U'){
+                Ufreq++;
+            }
+            else Dfreq++;
+        }
+        if((Lfreq==Rfreq) && (Ufreq==Dfreq)){
+            return true;
+        }
+        else return false;
+
+    }
+}

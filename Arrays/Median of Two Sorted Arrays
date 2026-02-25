@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Collections;
+class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        int x = nums1.length;
+        int y = nums2.length;
+        for(int i =0;i<x;i++){
+            list.add(nums1[i]);
+        }
+        for(int i =0;i<y;i++){
+            list.add(nums2[i]);
+        }
+        Collections.sort(list);
+        int n = list.size();
+        double mid = -1;
+        double nexmid = -1;
+        if(n%2==0){
+            mid = list.get((n/2)-1);
+            nexmid = list.get(n/2);
+            double median = (mid+nexmid)/2;
+            return median;
+        }
+        else{
+            mid = list.get(((n+1)/2)-1);
+            nexmid = 0;
+            double median = mid;
+            return median;
+        }
+    }
+}

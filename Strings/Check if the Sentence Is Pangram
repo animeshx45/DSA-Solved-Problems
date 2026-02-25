@@ -1,0 +1,15 @@
+class Solution {
+    public boolean checkIfPangram(String sentence) {
+        int arr [] = new int[26];
+        int n = sentence.length();
+        for(int i =0;i<n;i++){
+            arr[sentence.charAt(i)-97]++;
+        }
+        for(int i =0;i<arr.length;i++){
+            if(arr[i]==0){
+                return false;
+            }
+        }
+        return true;
+    }
+}

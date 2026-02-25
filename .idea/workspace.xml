@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="267b4676-9ef9-4d0b-a2ae-8bac64977089" name="Changes" comment="Backspace String Compare">
-      <change afterPath="$PROJECT_DIR$/Strings/Remove All Adjacent Duplicates In String" afterDir="false" />
-    </list>
+    <list default="true" id="267b4676-9ef9-4d0b-a2ae-8bac64977089" name="Changes" comment="Second Largest Digit in a String" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +115,47 @@
       <option name="project" value="LOCAL" />
       <updated>1772031542196</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Remove All Adjacent Duplicates In String">
+      <option name="closed" value="true" />
+      <created>1772031615099</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772031615099</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Check If Two String Arrays are Equivalent">
+      <option name="closed" value="true" />
+      <created>1772031676010</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1772031676010</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Determine if String Halves Are Alike">
+      <option name="closed" value="true" />
+      <created>1772031731857</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1772031731857</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge Strings Alternately">
+      <option name="closed" value="true" />
+      <created>1772031810347</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1772031810347</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Second Largest Digit in a String">
+      <option name="closed" value="true" />
+      <created>1772031858081</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772031858081</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -125,7 +163,12 @@
     <MESSAGE value="to Lower case" />
     <MESSAGE value="Jewels and Stones" />
     <MESSAGE value="Backspace String Compare" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backspace String Compare" />
+    <MESSAGE value="Remove All Adjacent Duplicates In String" />
+    <MESSAGE value="Check If Two String Arrays are Equivalent" />
+    <MESSAGE value="Determine if String Halves Are Alike" />
+    <MESSAGE value="Merge Strings Alternately" />
+    <MESSAGE value="Second Largest Digit in a String" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Largest Digit in a String" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

@@ -1,0 +1,21 @@
+class Solution {
+    public boolean checkString(String s) {
+        int n = s.length();
+        int idx = -1;
+        for(int i =0;i<n;i++){
+            if(s.charAt(i)=='b'){
+                idx = i;
+                break;
+            }
+        }
+        if(idx == -1) return true;
+        boolean flag = true;
+        for(int j =idx+1;j<n;j++){
+            if(s.charAt(j)!='b'){
+                flag = false;
+            }
+        }
+        return flag;
+
+    }
+}

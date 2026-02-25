@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="267b4676-9ef9-4d0b-a2ae-8bac64977089" name="Changes" comment="Second Largest Digit in a String" />
+    <list default="true" id="267b4676-9ef9-4d0b-a2ae-8bac64977089" name="Changes" comment="Find First Palindromic String in the Array" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +155,31 @@
       <option name="project" value="LOCAL" />
       <updated>1772031858081</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Check if the Sentence Is Pangram">
+      <option name="closed" value="true" />
+      <created>1772032067875</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1772032067875</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Reverse Prefix of Word">
+      <option name="closed" value="true" />
+      <created>1772032138857</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1772032138857</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Find First Palindromic String in the Array">
+      <option name="closed" value="true" />
+      <created>1772032193948</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1772032193948</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,7 +192,10 @@
     <MESSAGE value="Determine if String Halves Are Alike" />
     <MESSAGE value="Merge Strings Alternately" />
     <MESSAGE value="Second Largest Digit in a String" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Largest Digit in a String" />
+    <MESSAGE value="Check if the Sentence Is Pangram" />
+    <MESSAGE value="Reverse Prefix of Word" />
+    <MESSAGE value="Find First Palindromic String in the Array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Find First Palindromic String in the Array" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

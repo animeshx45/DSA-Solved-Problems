@@ -1,0 +1,20 @@
+import java.util.Arrays;
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        int n = s.length();
+        int z = t.length();
+        if(n!=z){
+            return false;
+        }
+        char [] ch = s.toCharArray();
+        char [] ph = t.toCharArray();
+        Arrays.sort(ch);
+        Arrays.sort(ph);
+        for(int i =0;i<ch.length;i++){
+            if(ch[i]!=ph[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+}

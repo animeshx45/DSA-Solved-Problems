@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+class Solution {
+    public boolean isSubstringPresent(String s) {
+        ArrayList<String> list = new ArrayList<String>();
+        StringBuilder sb = new StringBuilder(s);
+        int n = sb.length();
+        for(int i =0;i<n;i++){
+            for(int j =i+1;j<n+1;j++){
+                String str = sb.substring(i,j);
+                list.add(str);
+            }
+        }
+        boolean flag = false;
+        String ptr = sb.reverse().toString();
+        int x = list.size();
+        for(int i =0;i<x;i++){
+            if(list.get(i).length()==2 && ptr.contains(list.get(i))){
+                flag = true;
+            }
+        }
+        return flag;
+    }
+}

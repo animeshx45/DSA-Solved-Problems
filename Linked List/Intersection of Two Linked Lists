@@ -1,0 +1,35 @@
+public class Solution {
+    public ListNode getIntersectionNode(ListNode headA, ListNode   headB) {
+        ListNode temp1 = headA;
+        ListNode temp2 = headB;
+        int size1 = 0;
+        int size2 = 0;
+        while(temp1!=null){
+            size1++;
+            temp1 = temp1.next;
+        }
+        while(temp2!=null){
+            size2++;
+            temp2 = temp2.next;
+        }
+        ListNode temp3 = headA;
+        ListNode temp4 = headB;
+        if(size1>size2){
+            int idx = size1-size2;
+            for(int i =0; i<idx;i++){
+                temp3 = temp3.next;
+            }
+        }
+        else{
+            int idx = size2-size1;
+            for(int i =0;i<idx;i++){
+                temp4 = temp4.next;
+            }
+        }
+        while(temp3!=temp4){
+            temp3 = temp3.next;
+            temp4 = temp4.next;
+        }
+        return temp3;
+    }
+}

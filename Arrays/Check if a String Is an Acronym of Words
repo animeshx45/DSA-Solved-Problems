@@ -1,0 +1,15 @@
+class Solution {
+    public boolean isAcronym(List<String> words, String s) {
+        int n = words.size();
+        int m = s.length();
+        if(n!=m) return false;
+        for(int i =0;i<n;i++){
+            String str = words.get(i);
+            if(str.charAt(0)!=s.charAt(i)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+}

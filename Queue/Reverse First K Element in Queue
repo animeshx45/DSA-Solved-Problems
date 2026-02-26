@@ -20,6 +20,6 @@ public class reverseFirstKElement {
         for (int i = n; i <k ; i++) {
             q.add(q.remove());
         }
-        System.out.println(q);
+        System.out.println(q); 
     }
 }

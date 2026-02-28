@@ -13,6 +13,7 @@
  *     }
  * }
  */
+import java.util.ArrayList;
 class Solution {
     public static void DFS(TreeNode root, ArrayList<Integer> list){
         if(root == null){

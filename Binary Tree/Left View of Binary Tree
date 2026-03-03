@@ -1,0 +1,42 @@
+/*
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int val) {
+        this.data = val;
+        this.left = null;
+        this.right = null;
+    }
+}
+*/
+import java.util.ArrayList;
+class Solution {
+    public static int levels(Node root){
+        if(root == null){
+            return 0;
+        }
+        return 1+Math.max(levels(root.left),levels(root.right));
+    }
+    static int level = 0;
+    public static void leftlevel(Node root , int [] arr){
+        if(root == null){
+            return;
+        }
+        arr[level] = root.data;
+        level++;
+        leftlevel(root.right , arr);
+        leftlevel(root.left , arr);
+        level--;
+    }
+    public ArrayList<Integer> leftView(Node root) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        int n = levels(root);
+        int [] arr = new int[n];
+        leftlevel(root,arr);
+        for(int i = 0; i<arr.length; i++){
+            list.add(arr[i]);
+        }
+        return list;
+    }
+}

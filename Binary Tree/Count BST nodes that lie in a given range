@@ -1,0 +1,30 @@
+/*
+class Node
+{
+    int data;
+    Node left, right;
+
+    public Node(int d)
+    {
+        data = d;
+        left = right = null;
+    }
+}
+*/
+class Solution {
+    public static void add(Node root, ArrayList<Node> list,int l,int h){
+        if(root == null){
+            return;
+        }
+        if(root.data>=l && root.data<=h){
+            list.add(root);
+        }
+        add(root.left, list,l, h);
+        add(root.right, list,l, h);
+    }
+    int getCount(Node root, int l, int h) {
+        ArrayList<Node> list = new ArrayList<Node>();
+        add(root,list,l,h);
+        return list.size();
+    }
+}

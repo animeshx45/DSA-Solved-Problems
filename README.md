@@ -62,30 +62,8 @@ DSA-Solved-Problems
 ✔ Maintain **daily coding habit**
 
 ---
-
-## 📊 GitHub Stats
-
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight" height="160"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight" height="160"/>
-</p>
-
----
-
-## 🔥 Contribution Graph
-
-<p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=tokyo-night"/>
-</p>
-
----
-
 ## 🌟 Support
 
 If you like this repository, consider giving it a **⭐ Star**.
 
 ---
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=0e75b6&style=flat" />
-</p>

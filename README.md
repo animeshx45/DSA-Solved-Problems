@@ -13,10 +13,6 @@ I solve problems from multiple coding platforms such as:
 
 - LeetCode
 - GeeksforGeeks
-- HackerRank
-- Coding Ninjas
-- Other competitive programming platforms
-
 ---
 
 ## 🛠️ Language Used

@@ -29,10 +29,7 @@ The repository also helps me **track my learning progress and maintain coding co
 Problems solved from:
 
 - 🟠 LeetCode  
-- 🟢 GeeksforGeeks  
-- 🔵 HackerRank  
-- 🟣 Coding Ninjas  
-
+- 🟢 GeeksforGeeks   
 ---
 
 ## 📂 Repository Structure

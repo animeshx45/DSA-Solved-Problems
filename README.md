@@ -2,7 +2,7 @@
 <h3 align="center">Java Solutions for Data Structures & Algorithms</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=4000&color=36BCF7&center=true&vCenter=true&width=600&lines=Practicing+Data+Structures+and+Algorithms;Solving+LeetCode+Problems+in+Java;Improving+Problem+Solving+Skills+Daily;Future+Software+Engineer+🚀" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&color=00FF00&center=true&vCenter=true&width=600&lines=Practicing+Data+Structures+and+Algorithms;Solving+LeetCode+Problems+in+Java;Improving+Problem+Solving+Skills+Daily;Future+Software+Engineer+🚀" />
 </p>
 
 ---

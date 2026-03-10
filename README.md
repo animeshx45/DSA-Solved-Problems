@@ -1,29 +1,41 @@
-# 🚀 DSA Solved Problems (Java)
+<h1 align="center">🚀 DSA Solved Problems</h1>
+<h3 align="center">Java Solutions for Data Structures & Algorithms</h3>
 
-Welcome to my **Data Structures and Algorithms (DSA)** practice repository.  
-This repository contains my solutions to various DSA problems written in **Java**.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&color=36BCF7&center=true&vCenter=true&width=600&lines=Practicing+Data+Structures+and+Algorithms;Solving+LeetCode+Problems+in+Java;Improving+Problem+Solving+Skills+Daily;Future+Software+Engineer+🚀" />
+</p>
 
-The main purpose of this repository is to **improve problem-solving skills, strengthen algorithmic thinking, and maintain consistency in coding practice.**
+---
+
+## 👨‍💻 About This Repository
+
+This repository contains my **Data Structures and Algorithms (DSA)** solutions written in **Java**.  
+I solve problems from multiple coding platforms to improve my **algorithmic thinking and coding skills**.
+
+The repository also helps me **track my learning progress and maintain coding consistency**.
+
+---
+
+## 🧑‍💻 Languages & Tools
+
+<p>
+<img src="https://skillicons.dev/icons?i=java,git,github,vscode" />
+</p>
 
 ---
 
 ## 📚 Platforms
 
-I solve problems from multiple coding platforms such as:
+Problems solved from:
 
-- LeetCode
-- GeeksforGeeks
----
-
-## 🛠️ Language Used
-
-- **Java**
+- 🟠 LeetCode  
+- 🟢 GeeksforGeeks  
+- 🔵 HackerRank  
+- 🟣 Coding Ninjas  
 
 ---
 
 ## 📂 Repository Structure
-
-The problems are organized based on different **DSA topics**.
 
 ```
 DSA-Solved-Problems
@@ -42,32 +54,38 @@ DSA-Solved-Problems
 
 ---
 
-## 🎯 Goals of This Repository
+## 🎯 Goals
 
-- Practice **Data Structures and Algorithms**
-- Improve **problem-solving ability**
-- Prepare for **technical interviews**
-- Build strong **coding fundamentals**
-- Maintain **daily coding consistency**
-
----
-
-## 📈 Progress
-
-I regularly update this repository with new problems as I continue my DSA journey.
-
-✔ Clean and readable Java code  
-✔ Efficient approaches when possible  
-✔ Continuous learning and improvement  
+✔ Strengthen **DSA fundamentals**  
+✔ Improve **problem solving skills**  
+✔ Prepare for **coding interviews**  
+✔ Maintain **daily coding habit**
 
 ---
 
-## 🤝 Contributions
+## 📊 GitHub Stats
 
-This repository is mainly for **personal learning and practice**, but suggestions and improvements are always welcome.
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight" height="160"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight" height="160"/>
+</p>
 
 ---
 
-## ⭐ Support
+## 🔥 Contribution Graph
 
-If you find this repository helpful, consider giving it a **star ⭐**.
+<p align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=tokyo-night"/>
+</p>
+
+---
+
+## 🌟 Support
+
+If you like this repository, consider giving it a **⭐ Star**.
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=0e75b6&style=flat" />
+</p>

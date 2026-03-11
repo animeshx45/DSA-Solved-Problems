@@ -1,0 +1,63 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+import java.util.ArrayList;
+import java.util.Collections;
+public class Codec {
+    public static TreeNode convert(ArrayList<Integer> list,int lo,int hi){
+        if(lo>hi){
+            return null;
+        }
+        int mid = (lo+hi)/2;
+        TreeNode root = new TreeNode(list.get(mid));
+        root.left = convert(list,lo,mid-1);
+        root.right = convert(list,mid+1,hi);
+        return root;
+
+    }
+    public static void pre(TreeNode root, StringBuilder sb){
+        if(root == null){
+            return;
+        }
+        sb.append(root.val).append(",");
+        pre(root.left,sb);
+        pre(root.right,sb);
+    }
+
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        StringBuilder sb = new StringBuilder();
+        pre(root,sb);
+        return sb.toString();
+        
+    }
+
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+        StringBuilder sb = new StringBuilder(data);
+        for(int i = sb.length() - 1; i >= 0; i--){
+         if(sb.charAt(i) == ',' || sb.charAt(i) == '"'){
+        sb.deleteCharAt(i);
+    }
+}
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for(int i = 0; i<sb.length();i++){
+            list.add(Character.getNumericValue(sb.charAt(i)));
+        }
+        Collections.sort(list);
+        return convert(list,0,list.size()-1);
+    }
+}
+
+// Your Codec object will be instantiated and called as such:
+// Codec ser = new Codec();
+// Codec deser = new Codec();
+// String tree = ser.serialize(root);
+// TreeNode ans = deser.deserialize(tree);
+// return ans;

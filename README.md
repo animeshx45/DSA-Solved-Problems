@@ -44,6 +44,7 @@ DSA-Solved-Problems
 ├── Queue
 ├── Recursion
 ├── Binary Search
+├── Binary Search Tree
 ├── Trees
 ├── Graphs
 └── Dynamic Programming

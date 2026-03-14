@@ -1,0 +1,48 @@
+/*
+class Node {
+    int data;
+    Node left, right;
+    Node(int x) {
+        data = x;
+        left = right = null;
+    }
+}
+*/
+import java.util.ArrayList;
+class Solution {
+    public void add(Node root,ArrayList<Node> list){
+        if(root == null){
+            return;
+        }
+        add(root.left,list);
+        list.add(root);
+        add(root.right,list);
+    }
+    public ArrayList<Node> findPreSuc(Node root, int key) {
+        ArrayList<Node> list = new ArrayList<Node>();
+        ArrayList<Node> list1 = new ArrayList<Node>();
+        ArrayList<Node> list2 = new ArrayList<Node>();
+        ArrayList<Node> list3 = new ArrayList<Node>();
+        add(root,list);
+        for(int i = 0; i<list.size();i++){
+            if(list.get(i).data<key){
+                list1.add(list.get(i));
+            }
+            else if(list.get(i).data>key){
+                list2.add(list.get(i));
+            }
+            else{
+                continue;
+            }
+        }
+        if(list1.size()==0){
+            list1.add(null);
+        }
+        if(list2.size()==0){
+            list2.add(null);
+        }
+        list3.add(list1.get(list1.size()-1));
+        list3.add(list2.get(0));
+        return list3;
+    }
+}

@@ -45,6 +45,7 @@ DSA-Solved-Problems
 ├── Recursion
 ├── Binary Search
 ├── Binary Search Tree
+├── Heap
 ├── Trees
 ├── Graphs
 └── Dynamic Programming

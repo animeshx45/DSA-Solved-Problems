@@ -1,0 +1,36 @@
+import java.util.PriorityQueue;
+class triplets implements Comparable<triplets>{
+    int x;
+    int y;
+    int dis;
+    triplets(int x, int y, int dis){
+        this.x = x;
+        this.y = y;
+        this.dis = dis;
+    }
+    public int compareTo(triplets t){
+        return Integer.compare(this.dis,t.dis);
+    }
+}
+class Solution {
+    public int[][] kClosest(int[][] points, int k) {
+        PriorityQueue<triplets> pq = new PriorityQueue<triplets>(Collections.reverseOrder());
+        for(int i =0; i<points.length;i++){
+            int x = points[i][0];
+            int y = points[i][1];
+            int dis = (x*x)+(y*y);
+            triplets p = new triplets(x,y,dis);
+            pq.add(p);
+            if(pq.size()>k){
+                pq.remove();
+            }
+        }
+        int [][] ans = new int[k][2];
+        for(int i = 0; i<k;i++){
+            triplets top = pq.remove();
+            ans[i][0] = top.x;
+            ans[i][1] = top.y;
+        }
+        return ans;
+    }
+}

@@ -1,4 +1,5 @@
 import java.util.PriorityQueue;
+import java.util.Collections;
 class Solution {
     public static void add(PriorityQueue<Integer> pq, int [] stones){
         int n = stones.length;

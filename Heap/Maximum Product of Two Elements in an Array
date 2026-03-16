@@ -1,0 +1,18 @@
+import java.util.PriorityQueue;
+import java.util.Collections;
+class Solution {
+    public static void add(int[] nums,PriorityQueue<Integer> pq){
+        int n = nums.length;
+        for(int i =0; i<n;i++){
+            pq.add(nums[i]);
+        }
+    }
+    public int maxProduct(int[] nums) {
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Collections.reverseOrder());
+        add(nums,pq);
+        int num1 = pq.remove();
+        int num2 = pq.remove();
+        int ans = (num1-1)*(num2-1);
+        return ans;
+    }
+}

@@ -1,0 +1,31 @@
+import java.util.PriorityQueue;
+class Solution {
+    public static void add(PriorityQueue<Integer> pq, int [] stones){
+        int n = stones.length;
+        for(int i =0; i<n;i++){
+            pq.add(stones[i]);
+        }
+    }
+    public int lastStoneWeight(int[] stones) {
+        int l = stones.length;
+        if(l==1){
+            return stones[0];
+        }
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Collections.reverseOrder());
+        add(pq,stones);
+        while(pq.size()>1){
+            int num1 = pq.remove();
+            int num2 = pq.remove();
+            if(num1==num2){
+                pq.add(0);
+            }
+            else{
+                int insert = num1-num2;
+                pq.add(insert);
+            }
+        }
+        int ans = pq.remove();
+        return ans;
+        
+    }
+}

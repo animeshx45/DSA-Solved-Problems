@@ -1,0 +1,43 @@
+import java.util.PriorityQueue;
+import java.util.Collections;
+import java.math.BigInteger;
+
+class doublet implements Comparable<doublet> {
+    int idx;
+    BigInteger data;   // changed from int → BigInteger
+
+    doublet(int idx, BigInteger data) {
+        this.idx = idx;
+        this.data = data;
+    }
+
+    @Override
+    public int compareTo(doublet d) {
+        // Compare BigIntegers directly
+        return this.data.compareTo(d.data);
+    }
+}
+
+class Solution {
+    public static void add(PriorityQueue<doublet> pq, String[] nums) {
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            BigInteger num1 = new BigInteger(nums[i]);  // parse string into BigInteger
+            doublet t = new doublet(i, num1);
+            pq.add(t);
+        }
+    }
+
+    public String kthLargestNumber(String[] nums, int k) {
+        PriorityQueue<doublet> pq = new PriorityQueue<>(Collections.reverseOrder());
+        add(pq, nums);
+
+        for (int i = 0; i < k - 1; i++) {
+            pq.remove();
+        }
+
+        doublet top = pq.remove();
+        BigInteger num2 = top.data;
+        return num2.toString();  // convert BigInteger back to string
+    }
+}

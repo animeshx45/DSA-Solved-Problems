@@ -1,0 +1,79 @@
+import java.util.PriorityQueue;
+import java.util.Collections;
+class Solution {
+    public static void add(PriorityQueue<Integer> pq, int[] score){
+        int n = score.length;
+        for(int i =0; i<n; i++){
+            pq.add(score[i]);
+        }
+    }
+    public String[] findRelativeRanks(int[] score) {
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Collections.reverseOrder());
+        add(pq,score);
+        int n = score.length;
+        if(n==1){
+            String [] ans = new String[1];
+            ans[0]="Gold Medal";
+            return ans;
+        }
+        if(n==2){
+            ArrayList<String> str = new ArrayList<String>(2);
+            for (int i = 0; i <2; i++){
+            str.add("");
+            }
+            int num = pq.remove();
+            int num1 = pq.remove();
+            for(int i =0; i<2;i++){
+                if(score[i]==num){
+                    str.set(i,"Gold Medal");
+                }
+                else if(score[i]==num1){
+                    str.set(i,"Silver Medal");
+                }
+                else{
+                    continue;
+                }
+            }
+            String [] ans = new String[2];
+                for(int l =0; l<2;l++){
+                    ans[l]=str.get(l);
+                }
+                return ans;
+        }
+        ArrayList<String> str = new ArrayList<String>(n);
+         for (int i = 0; i < n; i++) {
+          str.add("");
+        }
+        int num = pq.remove();
+        int num1 = pq.remove();
+        int num2 = pq.remove();
+        for(int i =0; i<n;i++){
+            if(score[i]==num){
+                str.set(i,"Gold Medal");
+            }
+            else if(score[i]==num1){
+                str.set(i,"Silver Medal");
+            }
+            else if(score[i]==num2){
+                str.set(i,"Bronze Medal");
+            }
+            else{
+                continue;
+            }
+        }
+        for(int k = 4; k<=n;k++){
+            int num3 = pq.remove();
+            for(int t =0; t<n;t++){
+                if(score[t]==num3){
+                    String ptr = Integer.toString(k);
+                    str.set(t,ptr);
+                }
+            }
+        }
+        String [] ans = new String[n];
+        for(int i =0; i<n;i++){
+            ans[i]=str.get(i);
+        }
+        return ans;
+    }
+}

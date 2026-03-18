@@ -1,0 +1,36 @@
+import java.util.PriorityQueue;
+import java.util.Collections;
+class doublet implements Comparable<doublet>{
+    String str;
+    int freq;
+    doublet(String str, int freq){
+        this.str = str;
+        this.freq = freq;
+    }
+    public int compareTo(doublet d){
+        return Integer.compare(this.freq,d.freq);
+    }
+}
+class Solution {
+    public static void add(PriorityQueue<doublet> pq, String[] words){
+    HashMap<String, Integer> freqMap = new HashMap<>();
+    for (String w : words) {
+        freqMap.put(w, freqMap.getOrDefault(w, 0) + 1);
+    }
+    for (Map.Entry<String, Integer> entry : freqMap.entrySet()) {
+        pq.add(new doublet(entry.getKey(), entry.getValue()));
+    }
+}
+    public List<String> topKFrequent(String[] words, int k) {
+        PriorityQueue<doublet> pq = new PriorityQueue<doublet>(Collections.reverseOrder());
+        add(pq,words);
+        ArrayList<String> list = new ArrayList<String>();
+        for(int i =0; i<k;i++){
+            doublet top = pq.remove();
+            list.add(top.str);
+        }
+        Collections.sort(list);
+        return list;
+        
+    }
+}

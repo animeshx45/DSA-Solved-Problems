@@ -1,0 +1,21 @@
+import java.util.HashMap;
+class Solution {
+    public char getMaxOccuringChar(String s) {
+        HashMap<Character,Integer> map = new HashMap<>();
+        for(char ch : s.toCharArray()){
+            map.put(ch,map.getOrDefault(ch,0)+1);
+        }
+       int maxfreq = 0;
+       char ans = 'z';
+       for(char ch : map.keySet()){
+           if(map.get(ch)>maxfreq){
+               maxfreq = map.get(ch);
+               ans = ch;
+           }
+           else if(map.get(ch)==maxfreq && ch<ans){
+               ans = ch;
+           }
+       }
+       return ans;
+    }
+}

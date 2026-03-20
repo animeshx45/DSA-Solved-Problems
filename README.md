@@ -49,6 +49,7 @@ DSA-Solved-Problems
 ├── Trees
 ├── Graphs
 └── Dynamic Programming
+└── HashMap and HashSet
 ```
 
 ---

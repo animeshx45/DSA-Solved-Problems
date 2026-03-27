@@ -36,7 +36,6 @@ Problems solved from:
 
 ```
 DSA-Solved-Problems
-│
 ├── Arrays
 ├── Strings
 ├── LinkedList
@@ -48,8 +47,9 @@ DSA-Solved-Problems
 ├── Heap
 ├── Trees
 ├── Graphs
-└── Dynamic Programming
-└── HashMap and HashSet
+├── Dynamic Programming
+├── HashMap and HashSet
+├── Bit Manipulation
 ```
 
 ---

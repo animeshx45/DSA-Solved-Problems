@@ -1,0 +1,10 @@
+class CheckBit {
+    static boolean checkKthBit(int n, int k) {
+         n = n>>k;
+         if(n%2==1){
+             return true;
+         }
+         return false;
+        
+    }
+}

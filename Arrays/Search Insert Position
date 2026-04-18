@@ -1,0 +1,24 @@
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int n = nums.length;
+        boolean flag = false;
+        int idx = -1;
+        for(int i =0; i<n;i++){
+            if(nums[i]==target){
+                flag = true;
+                idx = i;
+            }
+        }
+        if(flag){
+            return idx;
+        }
+        else{
+            for(int i =0; i<n;i++){
+                if(nums[i]>target){
+                    return i;
+                }
+            }
+            return n;
+        }
+    }
+}

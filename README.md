@@ -50,6 +50,7 @@ DSA-Solved-Problems
 ├── Dynamic Programming
 ├── HashMap and HashSet
 ├── Bit Manipulation
+├── Binary Search
 ```
 
 ---

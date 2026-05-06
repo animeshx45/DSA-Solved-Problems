@@ -1,0 +1,35 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+import java.util.HashSet;
+import java.util.ArrayList;
+class Solution {
+    public ListNode modifiedList(int[] nums, ListNode head) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        HashSet<Integer> set = new HashSet<Integer>();
+        for(int i =0; i<nums.length;i++){
+            set.add(nums[i]);
+        }
+        ListNode temp = head;
+        while(temp != null){
+            if(!set.contains(temp.val)){
+                list.add(temp.val);
+            }
+            temp = temp.next;
+        }
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        for(int i =0; i<list.size();i++){
+            curr.next = new ListNode(list.get(i));
+            curr = curr.next;
+        }
+        return dummy.next;
+    }
+}

@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.math.BigInteger;
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ArrayList<Integer> list1 = new ArrayList<>();
+        ArrayList<Integer> list2 = new ArrayList<>();
+        ListNode temp1 = l1;
+        while (temp1 != null) {
+            list1.add(temp1.val);
+            temp1 = temp1.next;
+        }
+        ListNode temp2 = l2;
+        while (temp2 != null) {
+            list2.add(temp2.val);
+            temp2 = temp2.next;
+        }
+        Collections.reverse(list1);
+        Collections.reverse(list2);
+        BigInteger num1 = BigInteger.ZERO;
+        for (int d : list1) {
+            num1 = num1.multiply(BigInteger.TEN).add(BigInteger.valueOf(d));
+        }
+        BigInteger num2 = BigInteger.ZERO;
+        for (int d : list2) {
+            num2 = num2.multiply(BigInteger.TEN).add(BigInteger.valueOf(d));
+        }
+        BigInteger ans = num1.add(num2);
+        String s = ans.toString();
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        for (int i = s.length() - 1; i >= 0; i--) {
+            curr.next = new ListNode(s.charAt(i) - '0');
+            curr = curr.next;
+        }
+        return dummy.next;
+    }
+}

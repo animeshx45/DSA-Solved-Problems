@@ -1,0 +1,19 @@
+import java.util.HashSet;
+class Solution {
+    public int getCommon(int[] nums1, int[] nums2) {
+        HashSet<Integer> set = new HashSet<Integer>();
+        for(int ele : nums2){
+            set.add(ele);
+        }
+        int n = nums1.length;
+        for(int i =0; i<n;i++){
+            if(set.contains(nums1[i])){
+                return nums1[i];
+            }
+            else{
+                continue;
+            }
+        }
+        return -1;
+    }
+}

@@ -1,0 +1,40 @@
+import java.util.HashMap;
+import java.util.ArrayList;
+class Solution {
+    public int maxFreqSum(String s) {
+        HashMap<Character,Integer> map = new HashMap<>();
+        HashMap<Character,Integer> map2 = new HashMap<>();
+        ArrayList<Character> list = new ArrayList<Character>();
+        ArrayList<Character> list2 = new ArrayList<Character>();
+        for(char ch : s.toCharArray()){
+            if(ch == 'a' || ch == 'e' || ch == 'i'
+                    || ch == 'o' || ch == 'u'){
+                list.add(ch);
+            }
+            else{
+                list2.add(ch);
+            }
+        }
+        int volfreq = 0;
+        int confreq = 0;
+        for(char ch : list){
+            map.put(ch,map.getOrDefault(ch,0)+1);
+        }
+        for(char ch : list2){
+            map2.put(ch,map2.getOrDefault(ch,0)+1);
+        }
+        for(char ch : map.keySet()){
+            int freq =  map.getOrDefault(ch,0);
+            if(freq>volfreq){
+                volfreq = freq;
+            }
+        }
+        for(char ch : map2.keySet()){
+            int freq =  map2.getOrDefault(ch,0);
+            if(freq>confreq){
+                confreq = freq;
+            }
+        }
+        return volfreq+confreq;
+    }
+}

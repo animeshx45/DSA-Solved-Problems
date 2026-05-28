@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+class Solution {
+    public boolean isPrime(int num){
+        if(num == 1 || num == 0){
+            return false;
+        }
+        for(int i = 2; i<num;i++){
+            if(num%i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+    public boolean numberOfPrimeBits(int num){
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        while(num>0){
+            list.add(num%2);
+            num = num/2;
+        }
+        int count = 0;
+        for(int i =0; i<list.size();i++){
+            if(list.get(i)==1){
+                count++;
+            }
+        }
+        if(isPrime(count)){
+            return true;
+        }
+        return false;
+        
+    }
+    public int countPrimeSetBits(int left, int right) {
+        int count = 0;
+        while(left<=right){
+            if(numberOfPrimeBits(left)){
+                count++;
+            }
+            left++;
+        }
+        return count;
+    }
+}

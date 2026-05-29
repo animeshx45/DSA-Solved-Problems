@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+class Solution {
+    public int digitSum(int num){
+        int sum = 0;
+        while(num>0){
+            sum = sum + num%10;
+            num = num/10;
+        }
+        return sum;
+    }
+    public int minElement(int[] nums) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for(int i =0; i<nums.length;i++){
+            list.add(digitSum(nums[i]));
+        }
+        int min = Integer.MAX_VALUE;
+        for(int i =0; i<list.size();i++){
+            if(list.get(i)<min){
+                min = list.get(i);
+            }
+        }
+        return min;
+    }
+}

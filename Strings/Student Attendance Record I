@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+class Solution {
+    public boolean checkRecord(String s) {
+        ArrayList<Character> list1 = new ArrayList<Character>();
+        boolean flag = false;
+        char arr[] = s.toCharArray();
+        for(char ch : arr){
+            if(ch == 'A'){
+                list1.add(ch);
+            }
+        }
+        if (s.contains("LLL")){
+            flag = true;
+        }
+
+        if(list1.size()<2 && flag == false){
+            return true;
+        }
+        return false;
+    }
+}

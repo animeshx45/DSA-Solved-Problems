@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+class Solution {
+    public int[] sortArrayByParityII(int[] nums) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        for(int i =0; i<nums.length;i++){
+            if(nums[i]%2==0){
+                list.add(nums[i]);
+            }
+            else{
+                list1.add(nums[i]);
+            }
+        }
+        int ans[] = new int[nums.length];
+        for(int i =0; i<ans.length;i++){
+            if(i%2==0){
+                ans[i] = list.get(i/2);
+            }
+            else{
+                ans[i] = list1.get(i/2);
+            }
+        }
+        return ans;
+    }
+}

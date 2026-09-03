@@ -1,0 +1,77 @@
+import java.util.Arrays;
+class Solution {
+    public boolean isAllEven(int [] nums1){
+        boolean status = true;
+        for (int i = 0; i < nums1.length; i++) {
+            if (nums1[i]%2 != 0){
+                status = false;
+                return status;
+            }
+        }
+        return status;
+    }
+    public boolean isAllOdd(int [] nums1){
+        boolean status = true;
+        for (int i = 0; i < nums1.length; i++) {
+            if (nums1[i]%2 == 0){
+                status = false;
+                return status;
+            }
+        }
+        return status;
+    }
+    public boolean uniformArray(int[] nums1) {
+        Arrays.sort(nums1);
+        if (isAllEven(nums1)){
+            return true;
+        }
+        if (isAllOdd(nums1)){
+            return true;
+        }
+        boolean isFirstEven = false;
+        if(nums1[0]%2==0){
+            isFirstEven = true;
+        }
+        boolean ans = false;
+        if (isFirstEven){
+            for (int i = 1; i <nums1.length;i++) {
+                if (nums1[i] %2 != 0){
+                    for (int j = 0; j <i; j++) {
+                        if (nums1[i]-nums1[j]>=1 && nums1[i]-nums1[j]%2 ==0){
+                            ans = true;
+                            break;
+                        }
+                    }
+                    if (ans){
+                        continue;
+                    }
+                    else{
+                        return ans;
+                    }
+                }
+            }
+        }
+        else {
+            for (int i = 1; i < nums1.length ; i++) {
+                if (nums1[i]%2==0 ){
+                    for (int j = 0; j < i; j++) {
+                        if (nums1[i]-nums1[j] >=1 &&(nums1[i]-nums1[j])%2!=0){
+                            ans = true;
+                            break;
+                        }
+                        else {
+                            continue;
+                        }
+                    }
+                    if (ans){
+                        continue;
+                    }
+                    else{
+                        return ans;
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+}
